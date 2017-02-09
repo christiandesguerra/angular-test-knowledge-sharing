@@ -1,13 +1,7 @@
-import angular from 'angular';
+import 'angular';
 import 'angular-mocks';
+import '../../core.module';
 
-import * as storeController from './store.controller';
-
-describe('store controller', () => {
-
-  beforeEach(() => {
-    const dummyModule = angular.module('dummyModule', []);
-    dummyModule.controller('store', storeController);
-    angular.mock.module('dummyModule');
-  });
+fdescribe('store controller', () => {
+  beforeEach(angular.mock.module('core.shared'));
 });

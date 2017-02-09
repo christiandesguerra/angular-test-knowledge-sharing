@@ -16,7 +16,7 @@ const stylesLoader = 'css?root=' + rootPublic + '&sourceMap!postcss!sass?outputS
 module.exports = function(config) {
     config.set({
 
-        browsers: ['PhantomJS2'],
+        browsers: ['Chrome'],
 
         files: [
             {
